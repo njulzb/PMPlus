@@ -213,8 +213,8 @@ public class Sgreedy extends Schedule{
      * @throws IOException
      */
     public static void main(String[] args) throws IOException {
-        int cpuNumber = 2;
-        BottomMonitor bottomMonitor = new BottomMonitor("src/testFile/textSample.txt",cpuNumber);
+        int cpuNumber = 4;
+        BottomMonitor bottomMonitor = new BottomMonitor("src/testFile/rand_8.csv",cpuNumber);
         BottomService bottomService = new BottomService(bottomMonitor);
         Schedule schedule =  new Sgreedy();
         schedule.setBottomService(bottomService);
